@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Avadhut More - Full-Stack Web Developer portfolio" />
+    <title>Avadhut More | Portfolio</title>
+
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://img.icons8.com/?size=100&id=u9uX9u9zDG8W&format=png&color=000000">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script src="/js/main.js" defer></script>
+</head>
+
+<body>
+
+    <div id="dot-loader">
+        <div class="loader-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="loading-text">Loading</div>
+    </div>
+
+    <!-- ! --------------------------------------   HEADER ---------------------------------------  -->
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="nav-overlay"></div>
+                <div class="logo">
+                    <h2>Avadhut</h2>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-links">
+                        <a href="#home">Home</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#contact">Contact</a>
+                        <div class="nav-btn">
+                            <a href="#about" class="btn">About Me</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false"
+                    aria-controls="nav-menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ! --------------------------------------   MAIN ---------------------------------------  -->
+    <section class="main" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="info">
+                    <h3 class="hii">Hii, I'm </h3>
+                    <h3 class="name">Avadhut</h3>
+                    <h3 class="my-profession">Full Stack Web Developer</span>
+                    </h3>
+                    <p>Building scalable, modern web applications with clean, efficient code and real-world impact.
+                        Currently crafting industry-ready solutions at TAP Academy.
+                    </p>
+                    <a href="#contact" class="btn btn-primary">Get in touch</a>
+                    <a href="/Assets/AVADHUT M RESUME.pdf" class="btn btn-secondary">View Resume</a>
+                </div>
+                <div class="code-editor">
+                    <div class="header">
+                        <div class="dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="editor-title">developer.js</span>
+                    </div>
+                    <div class="code-area">
+                        <pre id="typing-text" data-lines='[
+                "1     const developer = {",
+                "2          name: \"Avadhut\",",
+                "3          role: \"Full Stack Developer\",",
+                "4          location: \"India\",",
+                "5          skills: {",
+                "6              backend: [\"Java\", \"Spring Boot\", \"Python\"],",
+                "7              frontend: [\"JavaScript\", \"HTML/CSS\"],",
+                "8              database: [\"MySQL\"],",
+                "9               Tools: [\"VSCode\", \"Eclipse\" ,  \"IDLE\"],",
+                "10          },",
+                "11         ",
+                "12         currentFocus: \"Building scalable web applications\",",
+                "13         funFact: \"500+ days LeetCode Streak! 🔥\"",
+                "14     };"
+                        ]'></pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ! --------------------------------------   ABOUT  ---------------------------------------  -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-head">
+                <h2>About Me</h2>
+                <p>A passionate full-stack developer crafting modern web solutions.</p>
+            </div>
+
+
+            <div class="about-wrapper">
+
+                <div class="about-info">
+                    <div class="about-img">
+                        <div class="image">
+                            <img src="/Assets/Images/Avadhut_Photo.jpg" alt="Profile-photo">
+                        </div>
+                        <div class="personal-info">
+                            <h3>Avadhut M</h3>
+                            <p><i class="fa-solid fa-envelope"></i>avadhutmore5776@gmail.com</p>
+                            <p><i class="fa-solid fa-location-dot"></i>India</p>
+
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/avadhut-more-449027259/" target="_blank"
+                                    id="LinkedIn" title="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/AvadhutMore00" target="_blank" id="GitHub" title="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="#" id="Instagram" target="_blank" title="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="#" id="WhatsApp" onclick="openWhatsApp()" target="_blank" title="WhatsApp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="about-summary">
+                        <p>Dedicated Software Developer with expertise in Python, Java, and full-stack
+                            development.
+                            Looking to
+                            contribute to high-quality, scalable software solutions while continuously improving
+                            system performance
+                            and delivering innovative features. </p>
+                    </div>
+
+                    <div class="resume">
+                        <a href="/Assets/AVADHUT M RESUME.pdf" class="btn btn-secondary">View Resume</a>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="tech-canvas-container"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ! --------------------------------------   PROJECTS ---------------------------------------  -->
+    <section id="projects" class="section-bg">
+        <div class="container">
+
+            <div class="project-head">
+                <h2>Featured Projects</h2>
+                <p>Showcasing my best in Full stack development.</p>
+            </div>
+            <br>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="/Assets/Images/food-img.jfif" alt="Food Delivery Application" />
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://am-food-delivary.netlify.app/" class="project-icon"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Food Delivery Application</h3>
+                        <p>
+                            A web-based food delivery application that allows users to browse
+                            restaurants, select food items, and place orders through a clean,
+                            user-friendly interface.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="/Assets/Images/resume-parser.jfif" alt="Smart Recruitment Data Parser" />
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://am-food-delivary.netlify.app/" class="project-icon"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart Recruitment Data Parser</h3>
+                        <p>
+                            An automated resume parsing system that extracts and analyzes
+                            candidate information to help recruiters shortlist applicants
+                            efficiently.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Excel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="/Assets/Images/park.jfif" alt="Digital Car Parking Application" />
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://am-food-delivary.netlify.app/" class="project-icon"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Digital Car Parking Application</h3>
+                        <p>
+                            A digital parking management system that tracks vehicle entry,
+                            exit, and real-time slot availability for faster parking operations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="/Assets/Images/photograpy.jpg" alt="Digital Car Parking Application" />
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://avadhutmore00.github.io/Photograpy/" class="project-icon"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Photograpy (Frontend)</h3>
+                        <p>
+                            A responsive photography portfolio website showcasing visual stories with smooth animations,
+                            gallery views, and modern UI design.
+                            Designed to highlight photographic compositions through immersive layouts and carefully
+                            curated image galleries.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="/Assets/Images/woodzone.jpg" alt="Digital Car Parking Application" />
+                        <div class="project-overlay">
+                            <a href="#" class="project-icon"><i class="fa-solid fa-code"></i></a>
+                            <a href="https://avadhutmore00.github.io/woodzone/" class="project-icon"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>WoodZone (Frontend)</h3>
+                        <p>
+                            A responsive WoodZone website showcasing premium wood products with modern layouts, smooth
+                            navigation, and visually rich design.
+                            Designed to highlight craftsmanship, textures, and product details through elegant sections
+                            and curated visuals.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ! -------------------------------------- Experience ---------------------------------------  -->
+    <section class="experience-section" id="experience">
+        <div class="heading">
+            <h2>Professional Journey</h2>
+            <p>My career path and educational background</p>
+        </div>
+
+
+        <div class="experince-body">
+            <div class="experience-container">
+                <div class="experience-content">
+                    <!-- Top Section (Text + Image Side by Side) -->
+                    <div class="top-section">
+                        <div class="text-info">
+                            <h2>Java Full Stack Development</h2>
+                            <h3>TAP Academy</h3>
+                            <p class="role">Intern • Aug 2025 - Present</p>
+                        </div>
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <p>Developing enterprise-level applications using Java Spring Boot and React.js</p>
+
+                    <!-- Skill Tags -->
+                    <div class="skills-tags">
+                        <span>Java</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                        <span>Spring Boot</span>
+                        <span>Hibernate</span>
+                        <span>REST API</span>
+                    </div>
+                </div>
+
+                <!-- Right Side (Experience Image) -->
+                <div class="experience-image">
+                    <img src="/Assets/Images/course.jfif" alt="TAP Academy">
+                    <div class="image-overlay">
+                        <p>TAP Academy</p>
+                        <p>Aug 2025 - Present</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="experince-body">
+            <div class="experience-container">
+                <div class="experience-image">
+                    <img src="/Assets/Images/analytics.jpg" alt="TAP Academy">
+                    <div class="image-overlay">
+                        <p>IFutureTech</p>
+                        <p>Dec 2024 - Feb 2025</p>
+                    </div>
+                </div>
+
+                <!-- Right Side (Experience Image) -->
+                <div class="experience-content">
+                    <!-- Top Section (Text + Image Side by Side) -->
+                    <div class="top-section">
+                        <div class="text-info">
+                            <h2>Data Analytics</h2>
+                            <h3>IFutureTech</h3>
+                            <p class="role">Intern • Dec 2024 - Feb 2025</p>
+                        </div>
+                        <i class="fa-solid fa-laptop"></i>
+                    </div>
+                    <p>Developing enterprise-level applications using Java Spring Boot and React.js</p>
+
+                    <!-- Skill Tags -->
+                    <div class="skills-tags">
+                        <span>Python</span>
+                        <span>Excel</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Git</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="experince-body">
+            <div class="experience-container">
+                <div class="experience-content">
+                    <!-- Top Section (Text + Image Side by Side) -->
+                    <div class="top-section">
+                        <div class="text-info">
+                            <h2>Bachelor of Comp Application</h2>
+                            <h3>Jain College of BCA</h3>
+                            <p class="role">Graduate • June 2025 </p>
+                        </div>
+                        <i class="fa-duotone fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <p>Developing enterprise-level applications using Java Spring Boot and React.js</p>
+
+                    <!-- Skill Tags -->
+                    <div class="skills-tags">
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>C</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Right Side (Experience Image) -->
+                <div class="experience-image">
+                    <img src="/Assets/Images/graduation.jfif" alt="TAP Academy">
+                    <div class="image-overlay">
+                        <p>Jain College, Belgaum</p>
+                        <p>June 2025 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="experience-btn">
+            <a href="#contact">Let's work together</a>
+        </div>
+
+    </section>
+
+    <!-- ! --------------------------------------SKILLS ---------------------------------------  -->
+    <section class="skills-section" id="skills">
+        <div class="heading">
+            <h2>The Skills That I Have</h2>
+            <p>💻 Technologies & Tools I Work With</p>
+        </div>
+        <div class="cards">
+            <div class="skill-cards">
+                <h2>Frontend</h2>
+                <div class="holographic-container">
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="">
+                        </div>
+                        <h2>HTML</h2>
+
+                    </div>
+
+
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="">
+                        </div>
+                        <h2>CSS</h2>
+
+                    </div>
+
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="">
+                        </div>
+                        <h2>JavaScript</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-cards">
+                <h2>Backend</h2>
+                <div class="holographic-container">
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=13679&format=png&color=000000" alt="">
+                        </div>
+                        <h2>JAVA</h2>
+
+                    </div>
+
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000" alt="">
+                        </div>
+                        <h2>Python</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="cards">
+            <div class="skill-cards">
+                <h2>Database</h2>
+                <div class="holographic-container">
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=rgPSE6nAB766&format=png&color=000000" alt="">
+                        </div>
+                        <h2>Mysql</h2>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-cards">
+                <h2>Tools</h2>
+                <div class="holographic-container">
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=20906&format=png&color=000000" alt="">
+                        </div>
+                        <h2>Git</h2>
+
+                    </div>
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=AZOZNnY73haj&format=png&color=000000" alt="">
+                        </div>
+                        <h2>Github</h2>
+
+                    </div>
+
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=w1uD6vtDitjr&format=png&color=000000" alt="">
+                        </div>
+                        <h2>Eclipse</h2>
+
+                    </div>
+
+
+                    <div class="holographic-card">
+                        <div class="image">
+                            <img src="https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" alt="">
+                        </div>
+                        <h2>VSCode</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- ! -------------------------------------- Contact ---------------------------------------  -->
+    <div class="page" id="contact">
+        <div class="heading">
+            <h2>Get in Touch – Let's Connect</h2>
+        </div>
+        <div class="container">
+            <!-- left: simplified contact form (optional) -->
+            <div class="form-card">
+                <h3>Send a message</h3>
+
+                <input type="text" id="name" class="input" placeholder="Your name" required>
+                <input type="email" id="email" class="input" placeholder="Email address" required>
+                <input type="text" id="subject" class="input" placeholder="Subject" required>
+                <textarea id="message" class="input" rows="6" placeholder="Write your message..." required></textarea>
+
+                <button class="btn-send" onclick="sendEmail()">
+                    <i class="fa-solid fa-paper-plane" style="margin-right:8px"></i>
+                    Send message
+                </button>
+            </div>
+
+            <!-- right: the contact info card -->
+            <aside class="info-card" aria-labelledby="contact-heading">
+                <h1 id="contact-heading">Let's work together!</h1>
+                <p class="lead">I'm always excited to connect with fellow developers, potential clients, and anyone
+                    interested in technology. Feel free to reach out for collaborations or just a friendly chat!</p>
+
+                <div class="contact-list" role="list">
+                    <div class="item" role="listitem">
+                        <div class="icon-circle ic-mail" aria-hidden="true">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="meta">
+                            <div class="label">Email</div>
+                            <div class="value"><a href="mailto:avadhutmore5776@gmail.com"
+                                    style="color:var(--muted); text-decoration:none;">avadhutmore5776@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item" role="listitem">
+                        <div class="icon-circle ic-location" aria-hidden="true">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="meta">
+                            <div class="label">Location</div>
+                            <div class="value">India</div>
+                        </div>
+                    </div>
+
+                    <div class="item" role="listitem">
+                        <div class="icon-circle ic-availability" aria-hidden="true">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </div>
+                        <div class="meta">
+                            <div class="label">Availability</div>
+                            <div class="value">Open for opportunities</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider" aria-hidden="true"></div>
+
+                <div style="display:flex; flex-direction:column; gap:8px; margin-top:8px;">
+                    <div class="small-note"><i class="fa-solid fa-map-pin"></i> Currently Intern from Tap Academy,
+                        Bangalore</div>
+                    <div class="small-note"><i class="fa-solid fa-clock"></i> Response time: Within 24 hours</div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- ! -------------------------------------- Footer ---------------------------------------  -->
+    <footer>
+        <div class="footer-content">
+            <h2>Let's Connect & Create</h2>
+            <p>Feel free to reach out for collaborations or just a friendly hello</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/avadhut-more-449027259/" target="_blank" id="LinkedIn"
+                    title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/AvadhutMore00" target="_blank" id="GitHub" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="#" id="Instagram" target="_blank" title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" id="WhatsApp" onclick="openWhatsApp()" target="_blank" target="_blank" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <script>
+                    function openWhatsApp() {
+                        const phone = "8431272411";
+                        const message = encodeURIComponent("Hello! I want to connect with you.");
+                        window.open(`https://wa.me/${phone}?text=${message}`, "_blank");
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 <span>AVADHUT</span>. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a> |
+                <a href="#">Terms of Service</a> |
+                <a href="#">Contact</a>
+            </div>
+            <a href="#home" class="scroll-btn"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
